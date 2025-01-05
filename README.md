@@ -36,6 +36,7 @@ c)	Mono-alphabetic Cipher
 •	break_mono(ciphertext): This function decrypts a text encrypted with a mono-alphabetic substitution cipher. We use a dictionary-type variable called decrypted_message, which stores the mapping of each letter in the ciphertext to its corresponding letter in the English alphabet as we discover them. Punctuation marks and newline characters are removed when reading the encrypted text, and each word is stored in a list called words.
 
 We base our frequency analysis on the standard letter frequency of the English language, which is "ETAOINSHRDLCUMWFGYPBVKJXQZ". We assume that “E” is the most frequently used letter in any long text. Using this assumption, we try to identify as many letters as possible. Next, we identify “a” by finding the most common letter among single-letter words. After that, we look for three-letter words like “and” and “the”, using certain limitations. For the word “from,” if it doesn’t appear in the text, we simply skip it. By this process, we aim to decrypt thirteen letters. As each letter is discovered, the corresponding variables are updated. The process order to find thirteen letter is below:
+
  ![image](https://github.com/user-attachments/assets/17488543-ed73-4477-83ea-5e2118e92026)
 
 
